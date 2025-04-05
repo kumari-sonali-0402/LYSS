@@ -1,0 +1,104 @@
+firstResponsive.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposive design</title>
+</head>
+<style>
+    body{
+        background-image: url(furniture.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        height: 200px;
+       width: 250px;
+        border: 1px solid rgb(151, 147, 147);
+        margin: 6px;
+        background-color: white;
+        position: relative;
+        /* flex: 1; */
+        box-sizing: border-box;
+        display: block;
+        transition-duration: inherit;
+    }
+    .span1{
+        background-image: url(img/planning.png);
+background-size: contain;
+    }
+    .span2{
+        background-image: url(img/interior.png);
+
+    }
+    .span3{
+        background-image: url(img/furniturelogo.png);
+
+    }
+    .innerbox span{
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60px;
+        width: 80px;
+        display: block;
+        filter: invert(50%);
+        padding: 3px;
+        
+
+    }
+    .innerbox{
+        padding: 5px;
+    }
+    .innerbox h3,.innerbox p{
+        margin: 5px 0px;
+    }
+    @media  (max-width :1168px) {
+        .box{
+            height: 200px;
+        /* width: 300px; */
+        }
+    }
+    
+@media  (max-width :767px) {
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        grid-gap: 10px;
+        
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+@media  (max-width :575px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+    @media  (max-width :280px) {
+        .box{
+           /* width: 200px; */
+           height: 200px;
+        }
+    }
+</style>
+<body>
+    <div class="container"><div class="box"><div class="innerbox"><span class="span1"></span><h3>planning</h3><p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p></div></div>
+    <div class="box"><div class="innerbox"><span class="span2"></span><h3>Interior</h3><p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p></div></div>
+    <div class="box"><div class="innerbox"><span class="span3"></span><h3>Furniture</h3><p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p></div></div>
+</div>
+</body>
+</html>
