@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head><style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+h3{
+color: black;}
+
+body{
+background-color:#1e334c;
+font-family: Arial,Helvetica, sans-serif;
+color:#ecb16a;
+}
+html{
+scroll-behavior: smooth;
+}
+
 img{
 height:200px;
 width:200px;
 border:1px solid black;
 border-radius:100px;
+}
+
+th,td{
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+
+th,td{
+color:white;
+text-align: center;
 }
 span{
 
@@ -20,7 +48,11 @@ body{
 margin-left:30px;
 }
 table{
-text-align:centre}
+width: 100%;
+border-collapse:collapse;
+margin-top:7px;
+text-align:centre
+}
 </style>
 <title>Resume</title>
 </head>
@@ -62,26 +94,32 @@ text-align:centre}
 </tr>
 </table>
 </div>
-<div><h3>SOFTWARE SKILLS:</h3>
-<table>
-<tr>
-<th><b>Languages:</b></th>
-<th>C,C++,PYTHON</th>
-</tr>
-<tr>
-<th><b>Software Products:</b></th>
-<th>SQL SERVER, MYSQL</th></tr>
-<tr>
-<th><b>Operating System:</b></th>
-<th>Windows 98/XP/Vista</th></tr>
-<tr>
-<th><b>Hardware Skills:</b></th>
-<th>Netwoking,Assembling of PC</th></tr>
-</table>
-</div>
-<table>
-<tr></tr></table>
-<div><h3>PERSONAL SKILLS & STRENGTHS:</h3>
+<h3>SOFTWARE SKILLS:</h3>
+
+<ul>Languages:
+  <li>C</li>
+  <li>C++</li>
+  <li>PYTHON</li>
+</ul>
+<ul>Software Products:
+<li>SQL</li> 
+<li>SERVER</li>
+<li>MYSQL</li>
+</ul>
+<ul>Operating System:
+<li>Windows 98/XP/Vista</li>
+</ul>
+<ul>
+<li>Hardware Skills:
+
+<li>Netwoking</li>
+<li>Assembling of PC</li>
+
+</li>
+
+</ul>
+
+<h3>PERSONAL SKILLS & STRENGTHS:</h3>
 <ul>
 <li>Motivating and goal oriented.</li>
 <li>Willingness to learn and ability to be a good team player.</li>
@@ -91,7 +129,6 @@ text-align:centre}
 <li>Ability totackle criticaal situation.</li>
 
 </ul>
-</div>
 
 </body>
 </html>
